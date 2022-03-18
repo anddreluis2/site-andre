@@ -1,0 +1,11 @@
+.Header {
+    display: flex;
+    margin-bottom: 120px;
+    padding: 10px;
+    background-color: #151515; 
+    justify-content: space-between;
+    svg {
+      display: flex;
+      font-size: 22px;
+    }
+  }

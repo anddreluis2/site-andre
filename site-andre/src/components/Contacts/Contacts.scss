@@ -1,0 +1,16 @@
+.contacts {
+    margin: 0 auto;
+   max-width: 110px;
+   display: flex;
+   //border: 1px solid black;  
+   justify-content: space-between;
+   a { 
+     color: inherit;
+     font-size: 23px;
+    } 
+ }
+ 
+ .contacts a:hover {
+   color: #fff;
+ }
+ 

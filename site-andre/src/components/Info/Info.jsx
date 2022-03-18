@@ -1,4 +1,4 @@
-
+import './Info.scss'
 
 export function Info() {
     return (

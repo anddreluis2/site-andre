@@ -1,5 +1,6 @@
-import { FaLinkedin, FaWhatsapp, FaGithub, FaCode } from "react-icons/fa"
+import { FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa"
 import { MdMail } from "react-icons/md"
+import './Contacts.scss'
 
 export function Contacts() {
     return (

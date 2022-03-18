@@ -1,4 +1,5 @@
 import { BsList } from "react-icons/bs"
+import './DropdownButton.scss'
 
 export function DropdownButton() {
     return (

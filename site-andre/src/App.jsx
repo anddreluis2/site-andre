@@ -2,7 +2,8 @@
 import './App.scss'
 import { Contacts } from './components/Contacts/Contacts'
 import { Header } from './components/Header/Header'
-import {Info } from './components/Info/Info'
+import { Info } from './components/Info/Info'
+import { Footer } from './components/Footer/Footer'
 
 
 function App() {
@@ -11,8 +12,8 @@ function App() {
     <div className="App">
       <Header />
       <Info />
-      <Contacts/>
-      <footer className='footer'>Desenvolvido por neymar junior</footer>
+      <Contacts />
+      <Footer />
     </div>
   )
 }
