@@ -1,4 +1,5 @@
 import { BsList } from "react-icons/bs"
+import { Link } from "react-router-dom"
 import './DropdownButton.scss'
 
 export function DropdownButton() {
@@ -6,9 +7,9 @@ export function DropdownButton() {
         <div className="dropdown">
             <button className="dropbtn"><BsList /></button>
             <div className="dropdown-content">
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
-                <a href="#">Projetos</a>
+                <Link to="/about">Sobre</Link>
+                <Link to="/contact">Contato</Link>
+                <Link to="/projects">Projetos</Link>
             </div>
         </div>
     )

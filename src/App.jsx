@@ -1,19 +1,20 @@
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { Home } from '../pages/Home'
+import { About } from "../pages/About"
+import { Contact } from "../pages/Contact"
 import './App.scss'
-import { Contacts } from './components/Contacts/Contacts'
-import { Header } from './components/Header/Header'
-import { Info } from './components/Info/Info'
-import { Footer } from './components/Footer/Footer'
-
 
 function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Info />
-      <Contacts />
-      <Footer />
+      <Router >
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </Router>
     </div>
   )
 }

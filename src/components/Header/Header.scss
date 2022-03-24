@@ -4,8 +4,14 @@
     padding: 10px;
     background-color: #151515; 
     justify-content: space-between;
+
     svg {
+      color: #b2b2b2;
       display: flex;
       font-size: 22px;
+
+      &:hover{
+        color: #fff;
+      }
     }
   }

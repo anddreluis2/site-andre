@@ -7,3 +7,11 @@
   font-weight: bold;
 }
 
+.Container {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border: solid 1px red;
+}
+
