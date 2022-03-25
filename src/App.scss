@@ -1,5 +1,4 @@
 .App {
- 
   text-align: center;
   background-color: #2b2b2b;
   color: #a9a9b3;
@@ -10,8 +9,21 @@
 .Container {
   max-width: 75%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  border: solid 1px red;
+  text-align: left;
+  padding: 6px;
 }
 
+.repo-list{
+  max-width: 20%;
+  list-style: none;
+  margin: 0 auto;
+  text-align: left;
+  margin-top:35px;
+
+  a{
+    color: inherit;
+    &:hover{
+      color:#fff;
+    }
+  }
+}
