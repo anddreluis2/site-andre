@@ -1,5 +1,5 @@
 import { Header } from "../src/components/Header/Header"
-import { Footer } from "../src/components/Footer/Footer"
+import {FaGithub} from 'react-icons/fa'
 import { useEffect, useState } from "react";
 
 export function Projects() {
@@ -21,15 +21,14 @@ export function Projects() {
     return (
         <>
             <Header />
-            <h1>Lista de Repositórios</h1>
+            <h1>Lista de Repositórios <FaGithub /></h1>
 
             {repositories.map(repository => {
                 return (
-                    <ul className="repo-list">
+                    <ul key={repository.id} className="repo-list">
                         <li>
                             <a href={repository.html_url}>
                                 <p>Nome: {repository.name}</p>
-                                <p>Descrição: {repository.description}</p>
                             </a>
                         </li>
                     </ul>

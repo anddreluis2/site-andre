@@ -1,56 +1,62 @@
 .dropbtn {
-    background-color: #151515;
-    color: white;
-    border: none;
+  background-color: #151515;
+  color: white;
+  border: none;
+}
+
+.dropbtn:hover {
+  cursor: pointer;
+
+}
+
+.dropdown {
+  position: relative;
+
+  svg {
+    font-size: 21px;
+    display: inline;
   }
-  
-  .dropbtn:hover {
-    cursor: pointer;
-    
+
+  border-radius: 12px;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #636363;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: -300%;
+  border-radius: 8px;
+
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: flex;
+  transition: all 200ms;
+
+  &:last-child {
+    border-radius: 0 0 6px 6px;
   }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    svg {
-      font-size: 21px;
-      display: inline;
-    }
-    border-radius: 5px;
-    
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #636363;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    left: -300%;
-  
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: #fff;
-    padding: 12px 12px;
-    text-decoration: none;
-    display: flex;
-    transition: all 200ms;
-  
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #151515;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #131313;}
-  
-  .name {
-    font-size: 35px;
-  
-  }
+}
+
+.dropdown-content a:hover {
+  background-color: #151515;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #131313;
+}
+
+.name {
+  font-size: 35px;
+
+}

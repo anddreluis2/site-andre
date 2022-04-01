@@ -7,9 +7,11 @@ export function DropdownButton() {
         <div className="dropdown">
             <button className="dropbtn"><BsList /></button>
             <div className="dropdown-content">
-                <Link to="/about">Sobre</Link>
-                <Link to="/contact">Contato</Link>
-                <Link to="/projects">Projetos</Link>
+                <div>
+                    <Link to="/about">Sobre</Link>
+                    <Link to="/contact">Contato</Link>
+                    <Link to="/projects">Projetos</Link>
+                </div>
             </div>
         </div>
     )
